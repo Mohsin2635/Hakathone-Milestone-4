@@ -1,0 +1,287 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* Style for paragraph elements */
+p {
+  font-style: italic;
+  padding-top: 10px;
+  text-transform: capitalize;
+}
+
+/* Add shadow effect to text */
+.shadow {
+  text-shadow: 2px 2px 5px rgb(50, 50, 50);
+}
+
+/* Set dimensions and fill color for SVG elements */
+svg {
+  width: 30px;
+  height: 20px;
+  fill: orangered;
+}
+
+/* Style for button elements */
+button {
+  width: 300px;
+  height: 50px;
+  background-color: #003366;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  border: 2px solid #00509e;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  margin-top: 20px;
+  cursor: pointer;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+}
+
+body {
+  width: 90%;
+  margin: 50px 70px 50px 70px;
+}
+
+/* Main container with flex display */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #003366;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+}
+
+/* Style for left-side-bar elements */
+.left-side-bar {
+  overflow: hidden;
+  height: 800px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  gap: 10px;
+}
+
+.all-contant {
+  display: flex;
+}
+
+/* Style for name-container elements */
+.name-container {
+  width: 100%;
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* Style for image elements */
+.image {
+  width: 16%;
+  height: 80%;
+}
+
+.image img {
+  border-radius: 50%;
+  background-size: cover;
+  border: 5px solid #00509e; /* Consistent blue border */
+  width: 100%;
+  height: 100%;
+}
+
+/* Style for contact section */
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact span {
+  font-size: 1.1rem;
+}
+
+#gmail {
+  text-transform: none;
+}
+
+.Skils ul {
+  line-height: 25px;
+  font-size: 1.3rem;
+  margin: 5px 0 0 50px;
+}
+
+/* Style for expertise list */
+.expertice ul {
+  text-align: left;
+  line-height: 25px;
+  padding: 10px 0 0 50px;
+  font-size: 1.2rem;
+}
+
+.Interests p {
+  margin: 10px 0 0 20px;
+  font-size: 1.1rem;
+}
+
+/* Style for right-side-bar elements */
+.right-side-bar {
+  width: 60%;
+  margin-right: 30px;
+  border-left: 10px solid #003366;
+  margin-bottom: 10px;
+}
+
+.About,
+.education,
+.experience {
+  margin-left: 20px;
+}
+
+/* Style for paragraph elements inside right-side-bar */
+.right-side-bar p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.education-iner-layer h2 {
+  margin-top: 10px;
+}
+
+/* Style for h2 elements inside education inner layer */
+.education-iner-layer p {
+  padding-left: 50px;
+  margin-top: 5px;
+}
+
+.experience h2,
+p {
+  margin-top: 10px;
+}
+.experience p {
+  padding-left: 50px;
+  margin-top: 5px;
+}
+
+.button {
+  margin-left: 50px;
+}
+
+.button button {
+  width: 20%;
+  border-radius: 30px;
+  box-shadow: none;
+  background-color: #003366;
+}
+
+.button button:hover {
+  background-color: #002244;
+  color: #ffffff;
+}
+
+@media (max-width: 1150px) {
+  body {
+    width: 95%;
+    margin: 50px 0 50px 25px;
+  }
+  .image {
+    width: 20%;
+  }
+  .left-side-bar {
+    margin-left: 30px;
+  }
+  .right-side-bar {
+    margin-right: 30px;
+  }
+  .nextjs {
+    gap: 5px;
+  }
+}
+
+@media (max-width: 900px) {
+  body {
+    margin: 50px 0 50px 20px;
+  }
+  .image {
+    width: 25%;
+  }
+  .left-side-bar {
+    margin-left: 10px;
+  }
+  .right-side-bar {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 780px) {
+  body {
+    margin: 50px 0 50px 15px;
+  }
+  .image {
+    width: 30%;
+  }
+  .name-container h1 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+  }
+  .all-contant {
+    flex-direction: column;
+    margin-left: 100px;
+    margin-top: 0;
+  }
+  .left-side-bar {
+    width: 100%;
+  }
+  .right-side-bar {
+    width: 100%;
+    border: none;
+  }
+  .button {
+    text-align: center;
+    margin-left: 0;
+  }
+  .button button {
+    width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    margin: 50px 0 50px 10px;
+  }
+  .image {
+    width: 35%;
+  }
+  .name-container h1 {
+    font-size: 1.3rem;
+  }
+  .all-contant {
+    margin-left: 60px;
+  }
+}
+
+@media (max-width: 450px) {
+  button {
+    width: 250px;
+  }
+  body {
+    width: 95%;
+    margin: 50px 0 50px 10px;
+  }
+  .image {
+    width: 40%;
+    height: 60%;
+  }
+  .name-container h1 {
+    font-size: 1.1rem;
+  }
+  .all-contant {
+    margin-left: 30px;
+  }
+  .nextjs {
+    gap: 0;
+  }
+}

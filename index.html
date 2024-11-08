@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Editable Resume Builder</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./download.png" type="image/x-icon">
+  </head>
+  <body>
+    <h1 class="top-h1">EDITABLE RESUME BUILDER</h1>
+    <form id="form">
+      <div class="main-container">
+        <div class="left-side-input">
+          <div class="personal-detail flex space">
+            <h1>Personal Detail</h1>
+            <input type="text" id="fullName" placeholder="FullName" required />
+            <input
+              type="number"
+              id="number"
+              placeholder="Phone Number"
+              required
+            />
+            <input type="email" id="email" placeholder="Email" />
+            <input type="text" id="address" placeholder="Address" required />
+          </div>
+          <div class="image">
+            <input type="file" id="pics" required />
+          </div>
+          <div id="skill_container" class="skill flex space">
+            <h1>Skills Summary</h1>
+            <input
+              type="text"
+              name="skill[]"
+              id="skill1"
+              placeholder="Skills 1"
+              required
+            />
+          </div>
+          <button type="button" id="addskillBtn" class="addme">Add more</button>
+
+          <div id="project_container" class="project flex space">
+            <h1>Project</h1>
+            <input
+              type="text"
+              name="project[]"
+              id="project1"
+              placeholder="project 1"
+              required
+            />
+          </div>
+          <button type="button" id="addprojectBtn" class="addme">
+            Add more
+          </button>
+        </div>
+        <div class="right-side-input">
+          <div id="education_container" class="inter-education flex space">
+            <h1>Education</h1>
+            <input
+              type="text"
+              name="degree[]"
+              id="degree1"
+              placeholder="Degree 1"
+              required
+            />
+            <input
+              type="text"
+              name="institute[]"
+              id="institute1"
+              placeholder="Institute Name"
+              required
+            />
+            <input
+              type="date"
+              name="passsed_year[]"
+              id="passsed_year1"
+              required
+            />
+          </div>
+          <button type="button" id="addeducationBtn" class="addme">
+            Add more
+          </button>
+
+          <div id="experience_container" class="inter-education flex space">
+            <h1>Experience</h1>
+            <input
+              type="text"
+              name="company[]"
+              id="company_name1"
+              placeholder="Company Name"
+              required
+            />
+            <input
+              type="text"
+              name="field[]"
+              id="field1"
+              placeholder="Enter Your Field"
+              required
+            />
+            <input type="date" name="work_date[]" id="work_date1" required />
+          </div>
+          <button type="button" id="addexperenceBtn" class="addme">
+            Add more
+          </button>
+
+          <div class="interest flex space">
+            <h1>Interest</h1>
+            <input
+              type="text"
+              name="interest"
+              id="interest"
+              placeholder="What you like"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="button">
+        <input type="submit" id="submit" />
+      </div>
+    </form>
+  </body>
+  <script src="index.js"></script>
+</html>
